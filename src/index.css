@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Italic-VariableFont_opsz,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+@theme {
+  --color-primary-bg: #0b0f14;
+  --color-not-know: #111827;
+  --color-cards-bg: #161b22;
+  --color-Cards-border: #1f2937;
+  --color-Primary-btn: #3b82f6;
+  --color-secondary-btn-bg: #161b22;
+  --color-white: #ffffff;
+  --color-Human-status: #22c55e;
+  --color-vehicle-status: #f59e0b;
+  --color-Animal-status: #ef4444;
+  --color-Bird-status: #8b5cf6;
+  --color-primary-txt: #e5e7eb;
+  --color-secondary-txt: #9ca3af;
+  --color-muted-txt: #6b7280;
+
+  /* --breakpoint-xs: 380px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1600px;
+  --breakpoint-4xl: 1760px; */
+}
