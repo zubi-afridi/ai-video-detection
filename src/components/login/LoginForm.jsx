@@ -1,7 +1,7 @@
 import { useState } from "react";
-import logo from "../../assets/images/AI-Monitor.png";
 import EyeIcon from "../../assets/icons/eye-close.svg?react";
 import EyeIconOpen from "../../assets/icons/eye-open.svg?react";
+import AiMonitor from "../../assets/icons/ai-monitor-logo.svg?react";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
@@ -13,14 +13,12 @@ const LoginForm = () => {
 
   return (
     <>
-      <img
-        src={logo}
-        alt="AI Monitor Logo"
-        className="mx-auto block animate-fade-in-up opacity-0 max-w-37.5 md:max-w-none"
-      />
+      <div className="mx-auto flex justify-center animate-fade-in-up opacity-0 max-w-37.5 md:max-w-none">
+        <AiMonitor className="w-full h-auto" />
+      </div>
 
       <div className="w-[92%] mx-auto max-w-115.5 rounded-xl py-6 px-4 md:py-7.5 md:px-5 bg-cards-bg backdrop-blur-xl border border-Cards-border shadow-xl text-primary-txt animate-fade-in-up delay-100 opacity-0">
-        <h2 className="font-semibold text-2xl md:text-[28px] mb-1 -mt-3 text-center">
+        <h2 className="font-semibold text-2xl md:text-[28px] mb-3 -mt-3 text-center">
           Welcome Back
         </h2>
 
@@ -81,7 +79,7 @@ const LoginForm = () => {
               <input
                 id="remember"
                 type="checkbox"
-                className="appearance-none h-3 w-3 border border-Primary-btn rounded-xs bg-transparent checked:bg-blue-600 checked:border-blue-600 checked:appearance-auto transition-colors"
+                className="appearance-none h-3 w-3 border border-Primary-btn rounded-xs bg-transparent checked:bg-blue-600 checked:border-blue-600 checked:appearance-auto transition-colors cursor-pointer"
               />
               <span className="group-hover:text-white transition-colors">
                 Remember me
@@ -99,7 +97,7 @@ const LoginForm = () => {
           <Link to="/livemonitoring" className="block">
             <button
               type="submit"
-              className="w-full rounded-lg bg-Primary-btn py-2.5 hover:bg-blue-700 active:scale-[0.98] transition-all duration-200 text-[14px] leading-none tracking-normal text-center shadow-md hover:shadow-lg"
+              className="w-full rounded-lg bg-Primary-btn py-2.5 hover:bg-blue-700 active:scale-[0.98] transition-all duration-200 text-[14px] leading-none tracking-normal text-center shadow-md hover:shadow-lg cursor-pointer"
             >
               Login
             </button>
